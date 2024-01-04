@@ -1,0 +1,100 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+#nav{
+    height: 100px;
+    max-width: 100%;
+    background-color: #70019ca1;
+    box-shadow: 4px 8px 10px 2px rgba(255, 255, 255, 0.2);
+}
+
+#logo{
+    width: 300px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#nav, #menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#menu{
+    padding-right: 50px;
+}
+#menu ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 1.7em;
+    font-weight: 600;
+    transition: color 0.5s linear;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 5px;
+    color: white;
+}
+
+#menu ul li:hover{
+    color: #f2c11b;
+    cursor:cell;
+}
+
+#info{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding-bottom: 30;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+}
+
+#info{
+    width: 30%;
+    background-color: inherit;
+}
+
+#info p{
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+#info h2{
+    font-size: 5em;
+    margin:0;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+#info h2 span{
+    color: #f2c11b;
+}
+
+#ianPhoto{
+    border-radius: 50%;
+    width: 380px;
+    margin: 0 auto;
+}
+
+#photoSection{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 25px;
+}
