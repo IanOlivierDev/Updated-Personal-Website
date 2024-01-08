@@ -13,10 +13,8 @@ body{
 }
 
 #logo{
-    width: 300px;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    width: 250px;
+    padding: 0px 50px;
 }
 #nav, #menu{
     display: flex;
