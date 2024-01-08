@@ -50,7 +50,7 @@ body{
 }
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 90%;
 }
@@ -59,6 +59,7 @@ main{
     width: 30%;
     background-color: inherit;
     padding-bottom: 50px;
+    margin-right: 300px;
 }
 
 #info p{
@@ -80,31 +81,60 @@ main{
     color: #f2c11b;
 }
 
-#ianPhoto{
+#spinBlock{
+    width: 600px;
+    height: 600px;
+    background-color: white;
     border-radius: 50%;
-    width: 380px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: iconSpin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-#photoSection{
+.spinImages{
+    width: 60px;
+    padding: 20px;
+}
+
+#mainContainer{
+    position: relative;
     height: 500px;
     width: 500px;
-    border-radius: 50%;
-    background-color: aliceblue;
+    margin-left: 500px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#mainPhoto{
+    position: absolute;
+    margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+    height: 600px;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 400px;
-    margin-top: 25px;
+}
+
+#ianImage{
+    border-radius: 50%;
+    width: 400px;
+    padding: 30px 30px;
 }
 
 .icons{
     width: 3em;
     margin-right: 20px;
-    animation-duration: 5000ms;
+    animation-duration: 2000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
 }
+
 @keyframes spin{
     from {
         transform:rotate(0deg);
@@ -114,10 +144,25 @@ main{
     }
 }
 .icons:hover{
-    transform: rotate(90deg);
     animation-name: spin;
+}
+
+
+.infoIcons{
+    width: 50px;
+    padding: 10px;
+    
 }
 
 a{
     text-decoration: none;
+}
+
+@keyframes iconSpin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
