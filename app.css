@@ -58,6 +58,7 @@ main{
 #info{
     width: 30%;
     background-color: inherit;
+    padding-bottom: 50px;
 }
 
 #info p{
@@ -95,4 +96,8 @@ main{
     align-items: center;
     margin-left: 400px;
     margin-top: 25px;
+}
+
+.icons{
+    max-width: 80px;
 }
